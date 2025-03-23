@@ -34,7 +34,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(217, 119);
+            this.label1.Location = new System.Drawing.Point(341, 191);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 16);
             this.label1.TabIndex = 0;
@@ -47,7 +47,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
             this.Name = "FormOVRIGT";
-            this.Text = "FormOVRIGT";
+            this.Text = "Övrigt";
             this.ResumeLayout(false);
             this.PerformLayout();
 

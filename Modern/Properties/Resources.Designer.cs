@@ -63,6 +63,16 @@ namespace Modern.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chatt {
+            get {
+                object obj = ResourceManager.GetObject("chatt", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap tools1 {
             get {
                 object obj = ResourceManager.GetObject("tools1", resourceCulture);

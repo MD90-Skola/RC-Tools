@@ -1,6 +1,6 @@
 ﻿namespace Modern.Forms
 {
-    partial class FormINSTALL
+    partial class formInstall
     {
         /// <summary>
         /// Required designer variable.
@@ -41,14 +41,15 @@
             this.label1.Text = "Install";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // FormINSTALL
+            // formInstall
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.label1);
-            this.Name = "FormINSTALL";
-            this.Text = "FormINSTALL";
+            this.Name = "formInstall";
+            this.Text = "Install";
+            this.Load += new System.EventHandler(this.FormINSTALL_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

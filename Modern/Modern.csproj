@@ -88,6 +88,9 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormHOME.resx">
+      <DependentUpon>FormHOME.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Forms\FormINSTALL.resx">
       <DependentUpon>FormINSTALL.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,6 +126,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\tools1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chatt.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

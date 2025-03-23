@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Modern.Forms
 {
-    public partial class FormINSTALL: Form
+    public partial class formInstall: Form
     {
-        public FormINSTALL()
+        public formInstall()
         {
             InitializeComponent();
         }
 
         private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void FormINSTALL_Load(object sender, EventArgs e)
         {
 
         }
