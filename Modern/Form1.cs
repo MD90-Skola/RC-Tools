@@ -17,6 +17,8 @@ using Point = System.Drawing.Point;
 using Size = System.Drawing.Size;
 using System.Runtime.InteropServices;
 using Modern.Forms;
+using System.Drawing.Drawing2D;
+
 
 
 
@@ -49,8 +51,8 @@ namespace Modern
             leftBoarderBtn = new Panel();
             leftBoarderBtn.Size = new Size(7, 60);
             panelMenu.Controls.Add(leftBoarderBtn);
-        //    currentBtn = new IconButton();
-          //  currentBtn.BackColor = Color.FromArgb(31, 30, 68);
+            currentBtn = new IconButton();
+            currentBtn.BackColor = Color.FromArgb(31, 30, 68);
 
 
         }
@@ -174,18 +176,26 @@ namespace Modern
 
 
 
+        ////////////////////////////////////////////////////////////////////////
+        ///////         Home nav menu                                     ///////
+        ///////                  FLIKAR                                  ///////
+        //////////////////////////////////////////////////////////////////////
 
 
 
-
+        // home
         private void iconButton1_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color1);
+            OpenChildForm(new FormHOME());
         }
 
+
+        //install
         private void iconButton2_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color2);
+            OpenChildForm(new FormINSTALL());
 
 
 
@@ -354,7 +364,7 @@ namespace Modern
 
         private void btnHome_MouseDown(object sender, MouseEventArgs e)
         {
-            // drag form 
+            // DENNA BRÅKAR !!! går inte klicka nu !!! men går att DRAG
             NativeMethods.ReleaseCapture();
             NativeMethods.SendMessage(this.Handle, NativeMethods.WM_NCLBUTTONDOWN, NativeMethods.HT_CAPTION, 0);
         }

@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Modern.Forms
 {
-    public partial class FormPROGRAM : Form
+    public partial class FormHOME: Form
     {
-        public FormPROGRAM()
+        public FormHOME()
         {
             InitializeComponent();
-        }
-
-        private void FormPROGRAM_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }
