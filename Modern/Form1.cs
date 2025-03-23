@@ -183,6 +183,9 @@ namespace Modern
 
 
 
+
+
+
         // home
         private void iconButton1_Click(object sender, EventArgs e)
         {
@@ -231,9 +234,13 @@ namespace Modern
         }
 
         private void Form1_Load(object sender, EventArgs e)
-        {
-
+        {      
+            ActivateButton(iconButton1, RGBColors.color1);
+            OpenChildForm(new FormHOME());
         }
+
+
+
 
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -284,7 +291,6 @@ namespace Modern
 
 
 
-       
 
 
 
@@ -292,19 +298,6 @@ namespace Modern
 
 
 
-
-
-
-
-
-
-
-
-
-        private void panelDesktop_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
 
 
 
@@ -368,6 +361,16 @@ namespace Modern
             NativeMethods.ReleaseCapture();
             NativeMethods.SendMessage(this.Handle, NativeMethods.WM_NCLBUTTONDOWN, NativeMethods.HT_CAPTION, 0);
         }
+
+        private void panelDesktop_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+
+
+
+
 
 
 
