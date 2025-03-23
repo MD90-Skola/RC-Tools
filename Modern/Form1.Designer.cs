@@ -29,10 +29,26 @@
 
 
 
+
+        //////////////////////////////////////////////////////////
+        ////////////       FONT AWESOME            ///////////////
+        //////////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
         //  DESIGNER CODE   ( FONTÀWESOME )
         private void InitializeComponent()
         {
             this.panelMenu = new System.Windows.Forms.Panel();
+            this.iconYoutube = new FontAwesome.Sharp.IconPictureBox();
+            this.iconIN = new FontAwesome.Sharp.IconPictureBox();
+            this.iconGithub = new FontAwesome.Sharp.IconPictureBox();
             this.iconButton4 = new FontAwesome.Sharp.IconButton();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
             this.iconButton2 = new FontAwesome.Sharp.IconButton();
@@ -45,6 +61,9 @@
             this.panelShadow = new System.Windows.Forms.Panel();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.panelMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.iconYoutube)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconIN)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconGithub)).BeginInit();
             this.panelLogo.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.panelTitleBar.SuspendLayout();
@@ -54,6 +73,9 @@
             // panelMenu
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.panelMenu.Controls.Add(this.iconYoutube);
+            this.panelMenu.Controls.Add(this.iconIN);
+            this.panelMenu.Controls.Add(this.iconGithub);
             this.panelMenu.Controls.Add(this.iconButton4);
             this.panelMenu.Controls.Add(this.iconButton3);
             this.panelMenu.Controls.Add(this.iconButton2);
@@ -66,6 +88,48 @@
             this.panelMenu.TabIndex = 0;
             this.panelMenu.Paint += new System.Windows.Forms.PaintEventHandler(this.panelMenu_Paint);
             this.panelMenu.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelMenu_MouseDown);
+            // 
+            // iconYoutube
+            // 
+            this.iconYoutube.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.iconYoutube.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconYoutube.IconChar = FontAwesome.Sharp.IconChar.Youtube;
+            this.iconYoutube.IconColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconYoutube.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconYoutube.Location = new System.Drawing.Point(12, 540);
+            this.iconYoutube.Name = "iconYoutube";
+            this.iconYoutube.Size = new System.Drawing.Size(32, 32);
+            this.iconYoutube.TabIndex = 7;
+            this.iconYoutube.TabStop = false;
+            this.iconYoutube.Click += new System.EventHandler(this.iconPictureBox2_Click);
+            // 
+            // iconIN
+            // 
+            this.iconIN.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.iconIN.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconIN.IconChar = FontAwesome.Sharp.IconChar.Linkedin;
+            this.iconIN.IconColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconIN.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconIN.Location = new System.Drawing.Point(115, 540);
+            this.iconIN.Name = "iconIN";
+            this.iconIN.Size = new System.Drawing.Size(32, 32);
+            this.iconIN.TabIndex = 6;
+            this.iconIN.TabStop = false;
+            this.iconIN.Click += new System.EventHandler(this.IconPictureBox1_Click_2);
+            // 
+            // iconGithub
+            // 
+            this.iconGithub.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(30)))), ((int)(((byte)(68)))));
+            this.iconGithub.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconGithub.IconChar = FontAwesome.Sharp.IconChar.GitAlt;
+            this.iconGithub.IconColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.iconGithub.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconGithub.Location = new System.Drawing.Point(63, 540);
+            this.iconGithub.Name = "iconGithub";
+            this.iconGithub.Size = new System.Drawing.Size(32, 32);
+            this.iconGithub.TabIndex = 5;
+            this.iconGithub.TabStop = false;
+            this.iconGithub.Click += new System.EventHandler(this.iconPictureBox1_Click_1);
             // 
             // iconButton4
             // 
@@ -194,7 +258,7 @@
             // lblTitleChildform1
             // 
             this.lblTitleChildform1.AutoSize = true;
-            this.lblTitleChildform1.Location = new System.Drawing.Point(57, 27);
+            this.lblTitleChildform1.Location = new System.Drawing.Point(70, 24);
             this.lblTitleChildform1.Name = "lblTitleChildform1";
             this.lblTitleChildform1.Size = new System.Drawing.Size(44, 16);
             this.lblTitleChildform1.TabIndex = 1;
@@ -209,7 +273,7 @@
             this.iconCurrentChildForm0.IconColor = System.Drawing.Color.MediumPurple;
             this.iconCurrentChildForm0.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.iconCurrentChildForm0.IconSize = 36;
-            this.iconCurrentChildForm0.Location = new System.Drawing.Point(15, 7);
+            this.iconCurrentChildForm0.Location = new System.Drawing.Point(36, 9);
             this.iconCurrentChildForm0.Name = "iconCurrentChildForm0";
             this.iconCurrentChildForm0.Size = new System.Drawing.Size(36, 36);
             this.iconCurrentChildForm0.TabIndex = 0;
@@ -251,6 +315,9 @@
             this.Text = "iconCurrentChildForm1";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.panelMenu.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.iconYoutube)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconIN)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.iconGithub)).EndInit();
             this.panelLogo.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.panelTitleBar.ResumeLayout(false);
@@ -274,6 +341,9 @@
         private System.Windows.Forms.Label lblTitleChildform1;
         private System.Windows.Forms.Panel panelShadow;
         private System.Windows.Forms.Panel panelDesktop;
+        private FontAwesome.Sharp.IconPictureBox iconGithub;
+        private FontAwesome.Sharp.IconPictureBox iconIN;
+        private FontAwesome.Sharp.IconPictureBox iconYoutube;
     }
 }
 

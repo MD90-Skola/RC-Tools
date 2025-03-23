@@ -370,6 +370,42 @@ namespace Modern
 
 
 
+        ////////////////////////////////////////////////////////////////////////
+        ///////////////   Footer for  menu   GIT / YT / IN       ///////////////
+        ////////////////////////////////////////////////////////////////////////
+
+
+
+        // GitHUB
+        private void iconPictureBox1_Click_1(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://github.com/MD90-Skola");
+        }
+
+
+        // GitHUB
+        private void iconPictureBox2_Click(object sender, EventArgs e)
+        {
+            
+
+        }
+
+
+        // linkdIN
+        private void IconPictureBox1_Click_2(object sender, EventArgs e)
+        {
+            
+        }
+
+        // youtube
+        private void iconYoutube_MouseHover(object sender, EventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.youtube.com/@Doctor9Raccoon");
+        }
+
+
+
+
 
 
 

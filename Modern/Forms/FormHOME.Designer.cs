@@ -1,4 +1,8 @@
-﻿namespace Modern.Forms
+﻿using System;
+using System.Windows.Forms;
+
+
+namespace Modern.Forms
 {
     partial class FormHOME
     {
@@ -29,8 +33,6 @@
         private void InitializeComponent()
         {
             this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -39,29 +41,12 @@
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.TimerAPII = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
+            this.labelDatum = new System.Windows.Forms.Label();
+            this.labelVecka = new System.Windows.Forms.Label();
+            this.labelManad = new System.Windows.Forms.Label();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(709, 37);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(62, 16);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Time API";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(687, 53);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(84, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Vilken vecka";
             // 
             // label3
             // 
@@ -138,14 +123,16 @@
             this.label10.Text = "PC API";
             this.label10.Click += new System.EventHandler(this.label10_Click);
             // 
-            // label11
+            // TimerAPII
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(817, 37);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(38, 16);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "10:20";
+            this.TimerAPII.AutoSize = true;
+            this.TimerAPII.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.4F);
+            this.TimerAPII.Location = new System.Drawing.Point(819, 6);
+            this.TimerAPII.Name = "TimerAPII";
+            this.TimerAPII.Size = new System.Drawing.Size(106, 22);
+            this.TimerAPII.TabIndex = 10;
+            this.TimerAPII.Text = "yyyy-MM-dd";
+            this.TimerAPII.Click += new System.EventHandler(this.label11_Click);
             // 
             // label12
             // 
@@ -155,24 +142,50 @@
             this.label12.Size = new System.Drawing.Size(0, 16);
             this.label12.TabIndex = 11;
             // 
-            // label13
+            // labelDatum
             // 
-            this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(817, 53);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(21, 16);
-            this.label13.TabIndex = 12;
-            this.label13.Text = "12";
+            this.labelDatum.AutoSize = true;
+            this.labelDatum.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.4F);
+            this.labelDatum.Location = new System.Drawing.Point(829, 34);
+            this.labelDatum.Name = "labelDatum";
+            this.labelDatum.Size = new System.Drawing.Size(96, 22);
+            this.labelDatum.TabIndex = 10;
+            this.labelDatum.Text = "TT:MM:SS";
+            this.labelDatum.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // labelVecka
+            // 
+            this.labelVecka.AutoSize = true;
+            this.labelVecka.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.4F);
+            this.labelVecka.Location = new System.Drawing.Point(835, 113);
+            this.labelVecka.Name = "labelVecka";
+            this.labelVecka.Size = new System.Drawing.Size(90, 22);
+            this.labelVecka.TabIndex = 10;
+            this.labelVecka.Text = "Vecka: 00";
+            this.labelVecka.Click += new System.EventHandler(this.label11_Click);
+            // 
+            // labelManad
+            // 
+            this.labelManad.AutoSize = true;
+            this.labelManad.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.4F);
+            this.labelManad.Location = new System.Drawing.Point(859, 91);
+            this.labelManad.Name = "labelManad";
+            this.labelManad.Size = new System.Drawing.Size(66, 22);
+            this.labelManad.TabIndex = 10;
+            this.labelManad.Text = "MMMM";
+            this.labelManad.Click += new System.EventHandler(this.label11_Click);
             // 
             // FormHOME
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(962, 450);
-            this.Controls.Add(this.label13);
+            this.ClientSize = new System.Drawing.Size(937, 472);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.label11);
+            this.Controls.Add(this.labelManad);
+            this.Controls.Add(this.labelVecka);
+            this.Controls.Add(this.labelDatum);
+            this.Controls.Add(this.TimerAPII);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -181,20 +194,25 @@
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Name = "FormHOME";
             this.Text = "HOME";
+            this.Load += new System.EventHandler(this.FormHOME_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
+        private void FormHOME_Load(object sender, EventArgs e)
+        {
+            timeUpdater = new Timer();
+            timeUpdater.Interval = 1000; // 1 sekund
+            timeUpdater.Tick += TimeUpdater_Tick;
+            timeUpdater.Start();
+        }
+
         #endregion
 
         private System.ComponentModel.BackgroundWorker backgroundWorker1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
@@ -203,8 +221,13 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label TimerAPII;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
+        private Label labelDatum;
+        private Label labelVecka;
+        private Label labelManad;
     }
+
+
+
 }
